@@ -1,0 +1,254 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color:black;
+    font-family: sans-serif;
+    color: white;
+}
+
+/* small change in all image  */
+
+img{
+    cursor: pointer;
+}
+
+/* navbar img  section  */
+
+.menu img{
+   
+    display: none;
+}
+
+
+/* navbar section  */
+
+nav{
+    margin: 20px;
+}
+
+nav ul{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: right;
+    gap: 30px;
+}
+
+ul li{
+    font-size: 20px;
+    list-style: none;
+}
+ul li:hover{
+    text-decoration:solid;
+    color: purple;
+    transition: 1s;
+}
+
+.home-section{
+    background-color: purple;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 20px;
+}
+.home-section:hover{
+    color: purple;
+    transition: 1s;
+    background-color: white;
+}
+
+
+/* intro section  */
+
+.intro{
+    display: flex;
+    flex-direction: row;
+    margin: 20px;
+    padding: 20px;
+    gap: 35px;
+    align-items: center;
+    justify-content: center;
+}
+
+/* left-intro section  */
+
+.introj-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 30px;
+}
+.intro-1 img{
+    width: 50px;
+}
+.intro-1 h3{
+    font-size: 40px;
+}
+.intro-line-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 10px;
+}
+.intro-line-2{
+    font-size: 10px;
+}
+
+/* right intro  */
+
+.right-intro{
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+    justify-content: center;
+    align-items: center;
+}
+.right-intro img{
+    width: 30vw;
+}
+
+/* Project setion  */
+
+.project-section{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.project-heading{
+    font-size: 30px;
+}
+.underline{
+    height: 10px;
+    width: 170px;
+    background-color: purple;
+    border-radius: 20px;
+    margin-bottom: 20px;
+    margin-bottom: 20px;
+}
+
+
+/* project list  */
+
+.project-list{
+   display: grid;
+   grid-template-columns: 1fr 1fr;
+   row-gap: 20px;
+   column-gap: 20px;
+}
+
+.project{
+    /* text-align: center; */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.project img{
+    width: 30vw;
+}
+.sec img{
+    height: 100%;
+}
+/* contact-section */
+
+.contact-section{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 20px;
+    margin: 50px;
+}
+.contact-section h1{
+    font-size: 40px;
+}
+
+ /* Social media section  */
+
+.social-media{
+    display: flex;
+    flex-direction: row;
+    color: white;
+    gap: 15px;
+    justify-content: center;
+    align-items: center
+}
+.social-media ul{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    margin-left: 20px;
+
+}
+.social-media ul li i{
+    color: white;
+    width: 50px;
+}
+
+.social-media ul li i:hover{
+    color:purple;
+    transition:1s;
+    width:50px;
+    transform: 1s;
+}
+
+/* media query part  */
+
+@media  screen and (max-width: 587px) {
+    nav ul{
+        display: none;
+    }
+   .menu img{
+    display: block;
+    width: 20px;
+   }
+   .intro{
+    display: flex;
+    flex-direction: column;
+   }
+   .right-intro img{
+    width: 60vw;
+   }
+   .intro-1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    font-size: 20px;
+   }
+   .intro-line-2 h1{
+    font-size: 40px;
+   }
+   .intro-line-1 h3{
+    font-size: 25px;
+    align-items: center;
+   }
+   .project-list{
+    display: grid;
+    grid-template-columns: 1fr;
+    align-items: center;
+    justify-content: center;
+    row-gap: 20px;
+    column-gap: 20px;
+   }
+   .project img{
+    width: 55vw;
+   }
+   .projects div h1{
+    font-size: 35px;
+   }
+   .underline{
+    height: 10px;
+    width: 180px;
+    background-color: purple;
+    border-radius: 20px;
+    margin: 20px;
+   }
+}
